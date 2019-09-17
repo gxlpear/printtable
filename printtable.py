@@ -1,3 +1,14 @@
+def get_multtable(number, limit):
+    """
+    Returns a list with multiplication table for number
+    from 1 to limit
+    """
+    result =  []
+    for i in range(1, limit+1):
+        result.append(i * number)
+    return result
+
+
 def multtable(number, limit):
     """
     Prints multiplication table for number
