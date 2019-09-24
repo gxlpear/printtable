@@ -39,14 +39,15 @@ def powertable(power, limit):
         result =  n **power
         print(result)
 
-def newpowertable(power, n):
-    while n > 0:
-        result = n **power
-        n = n - 1
+
+def newpowertable2(power, limit):
+    for n in range(1, limit + 1):
+        result =  pow (n, power) 
         print(result)
 
 if __name__ == "__main__":
     multtable(7, 10)
     powertable(2, 4)
-    newpowertable(2,4)
+    newpowertable2(2,4)
+    newpowertable2(3,3)
 
